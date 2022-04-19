@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecoveryActivity">
+
+  <ImageView
+      android:id="@+id/H_back2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_baseline_arrow_back_24"
+      android:layout_marginLeft="16dp"
+      android:layout_marginTop="16dp"/>
+
+  <TextView
+      android:id="@+id/recovAcc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Recovery Account"
+      android:layout_centerHorizontal="true"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      android:layout_marginTop="16dp"/>
+
+  <LinearLayout
+      android:id="@+id/ly_2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_marginTop="150dp"
+      android:layout_below="@+id/recovAcc"
+      android:padding="30dp">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_shape"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:backgroundTint="@color/whitegray"/>
+
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/btn_send"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ly_2"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="25dp"
+      android:width="250dp"
+      android:background="@drawable/btn_shape"
+      android:text="Send Email"
+      android:textColor="@color/white"
+      android:textSize="20dp" />
+
+</RelativeLayout>
